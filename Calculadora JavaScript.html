@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />
+		<title>Calculadora JavaScript</title>
+	</head>
+
+	<body>
+		<script>
+		function somar() {
+			alert('Somando Elementos');
+			var a = + document.getElementById('a').value;
+			var b = + document.getElementById('b').value;
+			document.getElementById('resultado').value = a + b;
+		}	
+	   </script>
+		<h1>Calculadora</h1>
+		<p>Insira o primeiro numero: <input type="text" id="a" /></p>
+		<p>Insira o segundo numero: <input type="text" id="b" /></p>
+		<button onclick="somar()">Somar (+)</button>
+		<p>Resultado: <input type="text" id="resultado" /></p>
+		
+	
+	</body>
+</html>
